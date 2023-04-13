@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCrypter</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="layout">
+    <header class="header-shadow">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="logo" class="img" />
+      </div>
+      <h1 class="text-title">MyCrypter</h1>
+    </header>
+
+    <main>
+      <div class="side-text">
+        <div class="form-item">
+          <label for="texto" class="text-label">Texto</label>
+          <textarea
+            name="text"
+            id="texto"
+            class="input input-shadow text-general"
+            placeholder="hola mundo"
+          ></textarea>
+        </div>
+
+        <div class="warning">
+          <img src="./assets/warning.svg" alt="warning icon" />
+          <p class="text-warning">Sólo letras minúsculas y sin tildes</p>
+        </div>
+
+        <div class="buttons">
+          <div class="button button-dark">Encryptar</div>
+          <div class="button button-light">Desencryptar</div>
+        </div>
+      </div>
+
+      <div class="side-content side-content-no-message">
+        <div class="form-item">
+          <label for="texto" class="text-label">Resultado</label>
+          <div class="input input-shadow text-general">
+            <img src="./assets/doll.svg" alt="muñeco" class="doll" />
+            <div class="text-result">
+              <p class="text-result-title">Ningún mensaje fue encontrado</p>
+              <p class="text-result-description">
+                Ingrese el texto que desea encryptar o desencryptar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Desarrollado por: EmersonHoruss</p>
+    </footer>
+  </body>
+</html>
