@@ -29,7 +29,6 @@ export function decryptedText(text) {
     for (const key in keys) {
         const value = keys[key];
         decryptedText = decryptedText.replaceAll(value, key)
-        console.log(value, key, decryptedText)
     }
     return decryptedText
 }

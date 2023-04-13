@@ -1,4 +1,5 @@
 import { isDesktop } from "./utils.js"
+import { enableCopyButton } from "./buttonsManager.js"
 
 const sideContentNoMessageMobile = `
 <div class="side-content side-content-no-message">
@@ -96,6 +97,10 @@ function removeSideContent() {
 
 function addSideContent(sideContent) {
   document.getElementsByTagName("main")[0].insertAdjacentHTML("beforeend", sideContent)
+
+  if (sideContent.includes("side-content-message")) {
+    enableCopyButton()
+  }
 }
 
 function sideContentNoMessageManager(text) {
