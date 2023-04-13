@@ -1,9 +1,7 @@
-import { sideContentManager } from "./sideContentManager.js";
-import { buttonsManager } from "./buttonsManager.js";
+import { sideContentManager } from "./js/sideContentManager.js";
+import { buttonsManager } from "./js/buttonsManager.js";
 
-function main() {
+(function main() {
     sideContentManager()
     buttonsManager()
-}
-
-main()
+})()
