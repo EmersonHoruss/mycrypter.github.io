@@ -25,10 +25,10 @@
     <main>
       <div class="side-text">
         <div class="form-item">
-          <label for="texto" class="text-label">Texto</label>
+          <label for="text" class="text-label">Texto</label>
           <textarea
-            name="text"
-            id="texto"
+            name="texto"
+            id="text"
             class="input input-shadow text-general"
             placeholder="hola mundo"
           ></textarea>
@@ -40,23 +40,8 @@
         </div>
 
         <div class="buttons">
-          <div class="button button-dark">Encryptar</div>
-          <div class="button button-light">Desencryptar</div>
-        </div>
-      </div>
-
-      <div class="side-content side-content-no-message">
-        <div class="form-item">
-          <label for="texto" class="text-label">Resultado</label>
-          <div class="input input-shadow text-general">
-            <img src="./assets/doll.svg" alt="muñeco" class="doll" />
-            <div class="text-result">
-              <p class="text-result-title">Ningún mensaje fue encontrado</p>
-              <p class="text-result-description">
-                Ingrese el texto que desea encryptar o desencryptar.
-              </p>
-            </div>
-          </div>
+          <button id="encrypt" class="button button-dark">Encryptar</button>
+          <button id="decrypt" class="button button-light">Desencryptar</button>
         </div>
       </div>
     </main>
@@ -65,4 +50,6 @@
       <p>Desarrollado por: EmersonHoruss</p>
     </footer>
   </body>
+
+  <script type="module" src="./main.js"></script>
 </html>
